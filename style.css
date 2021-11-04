@@ -1,0 +1,279 @@
+/* Mobile layout */
+@media screen and (max-width: 700px) {
+    body {
+      width: 95%;
+    }
+}
+  
+@media screen and (max-width: 500px) {
+    #mern-stack .m, .e, .r, .n {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+body {
+    position:relative;
+    margin: auto;
+    width:700px;
+    background-color: white;
+    font-family: 'Proxima Nova', 'Helvetica','Arial',sans-serif;
+    font-size: 18px;
+    color: #222222;
+    margin-bottom: 18px;
+}
+
+/* Header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border: 1px #ccc solid;
+    display: block;  
+}
+
+/* Course name */
+#course-name{
+    padding-top: 20px;
+    color:#ee3322;
+    font-weight:bold;
+    font-size: 32px;
+    font-family: 'Helvetica',sans-serif;
+}
+
+/* MERN Stack (Yellow circles) */
+#mern-stack{
+    display: flex;
+    text-align: center;
+
+}
+.m, .e, .r, .n {
+    margin-top: 15px;
+    margin-right: 18px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 100%;
+    font-size: 20px;
+    font-weight:bold;
+    color: black;
+    text-align: center;
+    background: #ffee00;
+    -ms-transform: rotate(-30deg); /* IE 9 */
+    transform: rotate(-30deg);
+}
+
+.m{
+    position: absolute;
+    right: 165px;
+    top: 0px;
+}
+
+.e{
+    position: absolute;
+    right: 110px;
+    top: 0px;
+}
+
+.r{
+    position: absolute;
+    right: 55px;
+    top: 0px;
+}
+
+.n{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+/* Quiz name */
+#quiz-name{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#quiz-name h1{
+    margin-top: 170px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: rgba(255, 255, 255, 0.9);
+    font: 40px Arial, sans-serif;
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 60px;
+    color: black;
+    border-spacing:10px;
+
+}
+
+.html-quiz{
+    height: 425px;
+    border:1px solid #ddd;
+    font-size:25px;
+    position:relative;
+    background-image: url(../starter_pack/images/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Author */
+#author{
+    padding: 18px 18px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* SCREEN 1: INTRODUCTION */
+#introduction h1{
+    font-weight: bold;
+    font-size:25px;
+    line-height: normal;
+
+}
+
+/* Start Button */
+#start-quiz {
+    padding: 20px;
+    background: #f1f1f1;
+    font: 25px Arial, sans-serif;
+    text-align: center;
+    line-height: normal;
+}
+
+#start-quiz .start{
+    margin-top:10px;
+    padding:17px;
+    font-size:17px;
+    line-height: normal;
+
+}
+
+#start {
+    background-color: #2196F3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#start:hover {
+    background-color: #0d8bf2;
+}
+
+/* SCREEN 2: ATTEMPT QUIZ */
+/* Choice list */
+.answer {
+    margin: 30px 0px;
+}
+
+/* Choice: un-selected */
+.option {
+    display: flex;
+    background-color: #f1f1f1;
+    border: 1px solid white;
+    line-height: 1px;
+    height: 45px;
+    align-items: center;
+}
+.option input[type="radio"] {
+    margin: 15px 15px;
+}
+
+/* Choice: selected */
+.option:hover {
+    background-color: #ddd;
+}
+
+/* Choice: review after complete the quiz */
+.hidden {
+    display: none;
+}
+
+.correct-answer {
+    background-color: #d4edda;
+}
+
+.wrong-answer {
+    background-color: #f8d7da;
+}
+
+/* Submit Button */
+#submit-button {
+    padding: 20px;
+    background: #f1f1f1;
+    font: 25px Arial, sans-serif;
+    text-align: center;
+    line-height: normal;
+}
+
+#submit-button .submit{
+    margin-top:10px;
+    padding:17px;
+    font-size:17px;
+    line-height: normal;
+}
+
+#submit {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #46a049;
+}
+
+/* SCREEN 3: REVIEW QUIZ */
+/* Boxes & Result view */
+#review-quiz {
+    padding: 20px;
+    background: #f1f1f1;
+    font: 24px Arial, sans-serif;
+    text-align: center;
+    line-height: normal;
+    border: 1px #dcdcdc solid;
+}
+
+#review-quiz #try-again{
+    margin-top:10px;
+    padding:17px;
+    font-size:17px;
+    line-height: normal;
+}
+
+#percent {
+    font-weight: bold;
+}
+
+/* Try again Button */
+#try-again {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#try-again:hover {
+    background-color: #46a049;
+}

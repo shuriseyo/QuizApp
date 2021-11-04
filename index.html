@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Quiz</title>
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <link href="https://fonts.googleapis.com/css?family=Pangolin:400,700|Proxima+Nova" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer="true"></script>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+
+    <!-- Course name -->
+    <div id="course-name">
+      WPR
+    </div>
+
+    <!-- MERN Stack (Yellow circles) -->
+    <div id="mern-stack">
+      <div class="m">M</div>
+      <div class="e">E</div>
+      <div class="r">R</div>
+      <div class="n">N</div>
+    </div>
+  </header>
+
+  <article>
+
+    <!-- Quiz name -->
+    <section id="quiz-name">
+      <div class="html-quiz">
+        <h1>HTML Quiz</h1>
+      </div>
+
+    <!-- Author -->
+    <div id="author">
+      By Nguyen Thi Van Anh
+    </div>
+    </section>
+
+                          <!-- SCREEN 1: INTRODUCTION -->
+    <section id="introduction">
+
+      <!-- Description -->
+      <h1>The Test</h1>
+      <p>The test contains 10 questions and there is no time limit.</p>
+      <p>The test is not official, it's just a nice way to see how much you know, or don't know, about HTML.
+      </p>
+
+      <h1>Count Your Score</h1>
+      <p>You will get 1 point for each correct answer. At the end of the Quiz, your total score will be displayed. Maximum score is 10 points.
+      </p>
+
+      <!-- Start Button -->
+      <div id="start-quiz">
+      <h1>Start the quiz</h1>
+      <p>Good luck!</p>
+
+        <div class="button">
+          <button id="start" >
+          Start the HTML Quiz &#10095;
+        </button>
+        </div>
+      </div>
+    </section>
+
+                          <!-- SCREEN 2: ATTEMPT QUIZ -->
+    <section id="attempt-quiz" class="hidden">
+      <div id="question-container">
+        
+      </div>
+
+      <!-- Submit Button -->
+      <div id="submit-button">
+        <div class="button">
+          <button id="submit">
+            Submit your answers ❯
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+                          <!-- SCREEN 3: REVIEW QUIZ -->
+    <section id="review-quiz" class="hidden">
+      <!-- Result View -->
+      <div id="result">
+        <h1>Result:</h1>
+        <p id="score"></p>
+        <p id="percent"></p>
+        <p id="feedback-text"></p>
+      </div>
+
+      <!-- Try again Button -->
+      <div class="button">
+        <button id="try-again">
+          Try again
+        </button>
+      </div>
+    </section>
+  </article>
+</body>
+
+</html>
